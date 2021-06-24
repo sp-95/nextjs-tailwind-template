@@ -28,3 +28,6 @@ rules:
       'ignorePackages',
       { 'js': 'never', 'jsx': 'never', 'ts': 'never', 'tsx': 'never' },
     ]
+settings:
+  import/resolver:
+    typescript: {}

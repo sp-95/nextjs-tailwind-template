@@ -10,7 +10,7 @@ const Home: React.FunctionComponent = () => {
         </h1>
 
         <p className="description">
-          Get started by editing <code className="code">pages/index.js</code>
+          Get started by editing <span className="code">pages/index.js</span>
         </p>
 
         <div className="card-container">

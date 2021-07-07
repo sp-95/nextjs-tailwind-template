@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Header: React.FunctionComponent = () => {
-  return <header />
+  return <nav />
 }
 
 export default Header

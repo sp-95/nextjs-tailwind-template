@@ -1,0 +1,6 @@
+@layer base {
+  aside {
+    @apply sticky top-0 h-screen max-w-max;
+    box-shadow: 0 20px 25px 5px grey;
+  }
+}

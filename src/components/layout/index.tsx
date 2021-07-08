@@ -2,6 +2,7 @@ import Head from 'next/head'
 import React from 'react'
 import Footer from './Footer'
 import Header from './Header'
+import Sidebar from './Sidebar'
 
 export interface LayoutProps {
   children: React.ReactElement | React.ReactElement[]
@@ -13,7 +14,7 @@ const Layout: React.FunctionComponent<LayoutProps> = (props: LayoutProps) => {
   const { children, title, description } = props
 
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex">
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
@@ -23,9 +24,12 @@ const Layout: React.FunctionComponent<LayoutProps> = (props: LayoutProps) => {
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </Head>
 
-      <Header />
-      <div className="flex-grow">{children}</div>
-      <Footer />
+      <Sidebar />
+      <div className="flex flex-col min-h-screen w-screen">
+        <Header />
+        <div className="flex-grow">{children}</div>
+        <Footer />
+      </div>
     </div>
   )
 }

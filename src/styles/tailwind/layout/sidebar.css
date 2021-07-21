@@ -1,6 +1,7 @@
-@layer base {
-  aside {
+@layer components {
+  .sidebar__container {
     @apply sticky top-0 h-screen max-w-max;
-    box-shadow: 0 20px 25px 5px grey;
+    box-shadow: 20px 0 25px -5px rgba(0, 0, 0, 0.1);
+    @apply z-50;
   }
 }

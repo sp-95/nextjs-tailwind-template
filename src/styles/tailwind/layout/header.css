@@ -1,6 +1,7 @@
-@layer base {
-  nav {
+@layer components {
+  .topbar__container {
     @apply sticky top-0;
     @apply shadow-xl;
+    @apply z-40;
   }
 }
